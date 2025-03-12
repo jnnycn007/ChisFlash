@@ -16,6 +16,7 @@
 | 256Mbit闪存 | ✅ |
 | 512Kbit SRAM/FRAM | ✅ |
 | 1Mbit SRAM/FRAM（Bank Switching） | ✅ |
+| 1Mbit/512Kbit Flash（Bank Switching） | ✅ |
 | 实时时钟（RTC） | × |
 | 振动反馈 | × |
 | 陀螺仪 | x |
@@ -46,11 +47,15 @@ ChisFlash
 ├── hardware
 ├── firmware
 │   └── QuartusII1MSRAM
+│   └── QuartusII1MFRAM
+│   └── QuartusII1MFlash
 ├── document-zh
 ```
 
 #### 补充说明
 
 - ChisFlash/hardware PCB设计文件
-- ChisFlash/firmware/QuartusII1MSRAM 固件目录 (适配1M SRAM/FRAM)
+- ChisFlash/firmware/QuartusII1MSRAM 固件目录 (适配1M SRAM) [PCB,BOM](https://oshwhub.com/chisbread/chisflash-pichu)
+- ChisFlash/firmware/QuartusII1MFRAM 固件目录 (适配1M FRAM) [PCB,BOM](https://oshwhub.com/chisbread/chisflash-prometheus)
+- ChisFlash/firmware/QuartusII1MFlash 固件目录 (适配1M Flash, 同时支持 512Kbit Flash) [PCB,BOM](https://oshwhub.com/chisbread/chisflash-celebi) [512Kbit ROM patch](https://github.com/ChisBread/gba-auto-batteryless-patcher/tree/custom_flashid)
 - ChisFlash/document是ChisFlash的中文技术文档

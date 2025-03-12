@@ -12,6 +12,7 @@
 | 256Mbit Flash | ✅ |
 | 512Kbit SRAM/FRAM | ✅ |
 | 1Mbit SRAM/FRAM (Bank Switching) | ✅ |
+| 1Mbit/512Kbit Flash（Bank Switching） | ✅ |
 | Real-Time Clock (RTC) | x |
 | Rumble | x |
 | Gyro | x |
@@ -41,11 +42,15 @@ ChisFlash
 ├── hardware
 ├── firmware
 │   └── QuartusII1MSRAM
+│   └── QuartusII1MFRAM
+│   └── QuartusII1MFlash
 ├── document-zh
 ```
 
 #### p.s.
 
 - ChisFlash/hardware PCB design files
-- ChisFlash/firmware/QuartusII1MSRAM is a CPLD/FPGA project for memory mapping (for 1M SRAM/FRAM)
+- ChisFlash/firmware/QuartusII1MSRAM is a CPLD/FPGA project for memory mapping (for 1M SRAM) [PCB,BOM](https://oshwhub.com/chisbread/chisflash-pichu)
+- ChisFlash/firmware/QuartusII1MFRAM (for 1M FRAM) [PCB,BOM](https://oshwhub.com/chisbread/chisflash-prometheus)
+- ChisFlash/firmware/QuartusII1MFlash (for 1M/512Kbit Flash) [PCB,BOM](https://oshwhub.com/chisbread/chisflash-celebi) [512Kbit ROM patch](https://github.com/ChisBread/gba-auto-batteryless-patcher/tree/custom_flashid)
 - ChisFlash/document is a Chinese document for ChisFlash
