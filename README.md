@@ -1,6 +1,7 @@
 
 # ChisFlash
 
+- [Discord](https://discord.gg/Hq8PSSpnEM)
 - [English](README-en.md)
 
 - ChisFlash是开源GBA烧录卡，它的灵感来自[opencartgba](https://github.com/laqieer/opencartgba)项目。
